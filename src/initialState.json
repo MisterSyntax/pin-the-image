@@ -1,3 +1,26 @@
 {
-    "enable" : false
+    "pins": [
+        {
+            "imgId": 10001,
+            "top": 100,
+            "left": 100,
+            "id": 10001
+        },
+        {
+            "imgId": 10001,
+            "top": 110,
+            "left": 200,
+            "id": 10002
+        }
+    ],
+    "images": [
+        {
+            "fileName": "dog2.png",
+            "id": 10001
+        },
+        {
+            "fileName": "lakedog.jps",
+            "id": 10002
+        }
+    ]
 }

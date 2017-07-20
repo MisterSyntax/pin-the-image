@@ -1,0 +1,9 @@
+@import url('../../cssGlobals/colors.css');
+.pin{
+    position: absolute;
+    font-size: 25px;
+    &:hover{
+        color: var(--second);
+        cursor: pointer;
+    }
+}

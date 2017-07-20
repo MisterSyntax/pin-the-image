@@ -1,21 +1,13 @@
 import React from 'react'
 
-export default class Home extends React.Component {
-    constructor(props){
-        super(props)
-        this.toggleContent = this.toggleContent.bind(this)
-    }
-    toggleContent(viewState) {
-        viewState ? this.props.onDisableContent() : this.props.onEnableContent()
-    }
-    render() {
-        return (
-            <div id="main">
-                <button onClick={()=>this.toggleContent(this.props.enable)}>Toggle</button>
-                <div style={{display:this.props.enable?"block":"none"}}>
-                    Content
-                </div>
-            </div>
-        );
-    }
+import PictureClicker from '../../containers/PictureClicker'
+import PictureSelector from '../PictureSelector'
+
+const Home = () => {
+    return (<div id='home'>
+            <PictureSelector />
+            <PictureClicker imgName="dog2.png" imgId="10001"/>
+        </div>)
 }
+
+export default Home

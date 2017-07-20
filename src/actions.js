@@ -8,14 +8,40 @@
  */
 import C from "./constants"
 
-export const enableContent = () => {
+export const addPic = (fileName) => {
+    let id = new Date().getTime()
     return {
-        type: C.ENABLE
+        type: C.ADD_PIC,
+        payload: {
+            fileName,
+            id
+        }
     }
 }
 
-export const disableContent = () => {
+export const removePic = (id) => {
     return {
-        type: C.DISABLE
+        type: C.REMOVE_PIC,
+        payload: id
+    }
+}
+
+export const addPin = ({imgId, top, left}) => {
+    let id = new Date().getTime()
+    return {
+        type: C.ADD_PIN,
+        payload: {
+            imgId,
+            top,
+            left,
+            id
+        }
+    }
+}
+
+export const removePin = (id) => {
+    return {
+        type: C.REMOVE_PIN,
+        payload: id
     }
 }

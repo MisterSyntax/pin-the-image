@@ -5,32 +5,32 @@
 import React from 'react'
 
 //import your component
-import Home from '../../components/Home/'
+import PictureClicker from '../../components/PictureClicker/'
 
 import { connect } from 'react-redux'
 
 //import whatever action you need to update your state
-import { enableContent, disableContent } from '../../actions'
+import { addPin, removePin } from '../../actions'
 
 const mapStateToProps = (state, props) => (
     {
-        enable: state.enable
+        pins: state.pins
     }
 )
 
 const mapDispatchToProps = dispatch => {
     return{
-        onEnableContent(){
+        onRemovePin(id){
             dispatch(
-                enableContent()
+                removePin(id)
             )
         },
-        onDisableContent(){
+        onAddPin(pin){
             dispatch(
-                disableContent()
+                addPin(pin)
             )
         }
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, mapDispatchToProps)(PictureClicker)

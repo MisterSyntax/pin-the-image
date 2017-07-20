@@ -4,8 +4,11 @@
  */
 
 const constants = {
-    ENABLE: 'ENABLE',
-    DISABLE: 'DISABLE'
+    ADD_PIC: 'ADD_PIC',
+    REMOVE_PIC: 'REMOVE_PIC',
+    
+    ADD_PIN:'ADD_PIN',
+    REMOVE_PIN:'REMOVE_PIN'
 }
 
 export default constants;
