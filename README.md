@@ -1,3 +1,14 @@
+Pin the Image
+---
+```
+A silly test project that places pins on a picture of a dog
+```
+
+
+
+This project uses the following:
+
+
 A basic react setup with css next and css import, and redux
 ---
  
